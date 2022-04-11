@@ -1,0 +1,1 @@
+# allio-react-Java-Type-sample-
