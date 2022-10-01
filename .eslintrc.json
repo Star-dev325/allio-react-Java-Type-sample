@@ -19,8 +19,7 @@
   "plugins": [
     "react",
     "react-hooks",
-    "@typescript-eslint",
-    "autofix"
+    "@typescript-eslint"
   ],
   "rules": {
     "react/react-in-jsx-scope": 0,
@@ -46,33 +45,11 @@
     "@typescript-eslint/consistent-type-imports": [ // For only typescript
       2,
       {
-        "prefer": "type-imports",
+        "prefer": "type-imports"
       }
     ],
-    "import/order": [
-      2,
-      {
-        "groups": [
-          "builtin",
-          "external",
-          "parent",
-          "sibling",
-          "index",
-          "object",
-          "type"
-        ],
-        "pathGroups": [
-          {
-            "pattern": "@/**/**",
-            "group": "parent",
-            "position": "before"
-          }
-        ],
-        "alphabetize": {
-          "order": "asc"
-        }
-      }
-    ]
+    "react-hooks/rules-of-hooks": 2,
+    "react-hooks/exhaustive-deps": 1
   },
   "settings": {
     "import/resolver": {
